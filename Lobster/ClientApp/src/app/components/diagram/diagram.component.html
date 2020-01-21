@@ -1,0 +1,17 @@
+<br />
+<br />
+<div>
+  <svg [attr.width]="800" [attr.height]="650">
+    <image xlink:href="assets/diagram.png" />
+    <rect *ngFor="let el of elements"
+          rx="5" ry="5"
+          [attr.x]="el.zoomX"
+          [attr.y]="el.zoomY"
+          [attr.width]="el.zoomW"
+          [attr.height]="el.zoomH"
+          style="fill:white;stroke:deeppink;stroke-width:4;" />
+
+  </svg>
+</div>
+
+<!--<img src="assets/diagram.png" />-->

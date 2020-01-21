@@ -1,0 +1,22 @@
+<div class="content">
+  <br />
+  <br />
+
+  <div *ngIf="decision">
+    <h2>{{ decision.title }}</h2>
+  </div>
+  <br />
+  <div *ngIf="!isEnd()">
+    <button class="button" style="background-color:#4e9af1" (click)="persistResult(true)">Yes</button>
+    <button class="button" style="background-color:#c65959" (click)="persistResult(false)">No</button>
+  </div>
+
+  <div *ngIf="isEnd()">
+    <button class="button" style="background-color:#2e8d2d" (click)="showDiagram()">View Diagram</button>
+    <button class="button" style="background-color:#2e8d2d" (click)="clearResults()">Clear Results</button>
+  </div>
+
+  <ng-template #loading>Loading…</ng-template>
+
+</div>
+
