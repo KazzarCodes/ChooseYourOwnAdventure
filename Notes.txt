@@ -1,0 +1,11 @@
+Database design : 
+
+I was contemplating the current table design against using a single class/recursive pattern:
+
+class NodeBase {
+    ...
+    List<NodeBase> childNodes;
+}
+
+which would have better allowed for answers other than yes/no. I chose the current design for simplicity reasons as the spec asked. 
+I also wanted to put more focus on the back-end side relating to this role.

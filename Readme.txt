@@ -1,0 +1,3 @@
+- Set connection string in appsettings.json
+- Run Update-Database command in npm / Execute query 'CreateDb.sql' in Scripts folder
+- Execute the 'InsertData.sql' script in Scripts folder
